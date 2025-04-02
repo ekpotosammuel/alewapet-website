@@ -15,6 +15,7 @@ class CreateFumigationsTable extends Migration
     {
         Schema::create('fumigations', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('eho_number')->nullable();
             $table->string('name_of_premises')->nullable();
             $table->string('address_of_premises')->nullable();
             $table->string('phone_no')->nullable();

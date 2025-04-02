@@ -72,7 +72,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>VENDOR NAME:</strong>
-                <input type="text" name="vendors_use" class="form-control" placeholder="vendors_use">
+                <input type="text" name="vendors_use" class="form-control" placeholder="Vendor Name">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>EHO NUMBER:</strong>
+                <input type="text" name="eho_number" class="form-control" placeholder="EHO Number">
             </div>
         </div>
          <div class="col-xs-12 col-sm-12 col-md-12">
@@ -84,15 +90,17 @@
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>ISSUE DATE:</strong>
-                <input type="date" name="issue_date" class="form-control" placeholder="issue_date" id="datepicker">
+                <input type="date" name="issue_date" class="form-control" placeholder="issue_date">
+                <!-- <input type="date" name="date_of_fumigation" class="form-control" placeholder="date_of_fumigation"> -->
+
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
+        <!-- <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>EXPIRE DATE:</strong>
                 <input type="date" name="expires_date" class="form-control" placeholder="expires_date" id="datepicker" >
             </div>
-        </div>
+        </div> -->
       {{--   <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>COMMENT:</strong>

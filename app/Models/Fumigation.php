@@ -18,5 +18,6 @@ class Fumigation extends Model
         "cert_no",
         "issue_date",
         "expires_date",
+        "eho_number"
     ];
 }

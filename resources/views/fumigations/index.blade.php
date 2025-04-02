@@ -57,6 +57,7 @@
                                             <th>DATE OF FUMIGATION</th>
                                             <th>VENDOR NAME</th>
                                             <th>CERTIFICATE NO</th>
+                                            <th>EHO NO</th>
                                             <th>ISSUE DATE</th>
                                             <th>EXPIRE DATE </th>
                                             <th>COMMENT</th>
@@ -76,6 +77,7 @@
                                             <td>{{ $fumigation->date_of_fumigation }}</td>
                                             <td>{{ $fumigation->vendors_use }}</td>
                                             <td>{{ $fumigation->cert_no }}</td>
+                                            <td>{{ $fumigation->eho_number }}</td>
                                             <td>{{ $fumigation->issue_date}}</td>
                                             <td>{{ $fumigation->expires_date }}
 

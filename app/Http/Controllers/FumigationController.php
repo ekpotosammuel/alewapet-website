@@ -74,6 +74,7 @@ class FumigationController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request->all();
          $request->validate([
             'name_of_premises' => 'required',
             'address_of_premises' => 'required',
@@ -82,12 +83,23 @@ class FumigationController extends Controller
             'vendors_use' => 'required',
             'cert_no' => 'required',
             'issue_date' => 'required',
-            'expires_date' => 'required',
+            'eho_number' =>'required',
+            // 'expires_date' => 'required',
             
 
         ]);
     
-        Fumigation::create($request->all());
+        Fumigation::create([
+            "name_of_premises"=>$request->name_of_premises,
+            "address_of_premises"=>$request->address_of_premises,
+            "phone_no"=>$request->phone_no,
+            "date_of_fumigation"=>$request->date_of_fumigation,
+            "vendors_use"=>$request->vendors_use,
+            "cert_no"=>$request->cert_no,
+            "issue_date"=>$request->issue_date,
+            "eho_number"=>$request->eho_number,
+            "expires_date" => Carbon::parse($request->issue_date)->addMonths(3)
+        ]);
      
         return redirect()->route('fumigations')->with('success','fumigation List has been created successfully.');
     }
